@@ -534,12 +534,11 @@ ul { list-style: none; }
 .hero-tag {
     color: var(--gold);
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 20px;
-    opacity: 0;
-    animation: fadeInUp 1s 0.3s forwards;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.5);
 }
 
 .hero-title {
