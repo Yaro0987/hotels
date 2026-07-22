@@ -983,6 +983,7 @@ document.addEventListener('click', (e) => {
 (function() {
     const slides = document.querySelectorAll('.hero-slide');
     const dots = document.querySelectorAll('.hero-dot');
+    const textSlides = document.querySelectorAll('.hero-text-slide');
     if (slides.length === 0) return;
 
     let current = 0;
@@ -992,9 +993,13 @@ document.addEventListener('click', (e) => {
     function goTo(index) {
         slides[current].classList.remove('active');
         dots[current].classList.remove('active');
+        if (textSlides[current]) textSlides[current].classList.remove('active');
+
         current = (index + slides.length) % slides.length;
+
         slides[current].classList.add('active');
         dots[current].classList.add('active');
+        if (textSlides[current]) textSlides[current].classList.add('active');
     }
 
     function next() { goTo(current + 1); }

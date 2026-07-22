@@ -4,9 +4,9 @@
 
 /* --- CSS Variables --- */
 :root {
-    --deep-purple: #3D0B75;
-    --purple-dark: #2E0858;
-    --purple-light: #5A1DA0;
+    --deep-purple: #0C3547;
+    --purple-dark: #082635;
+    --purple-light: #14566E;
     --gold: #D4A24A;
     --gold-light: #e0b560;
     --gold-dark: #b8892f;
@@ -429,7 +429,7 @@ ul { list-style: none; }
 
 .hero-slider-dots {
     position: absolute;
-    bottom: 180px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
@@ -504,9 +504,9 @@ ul { list-style: none; }
     inset: 0;
     background: linear-gradient(
         180deg,
-        rgba(17, 17, 17, 0.5) 0%,
-        rgba(61, 11, 117, 0.5) 50%,
-        rgba(17, 17, 17, 0.75) 100%
+        rgba(12, 53, 71, 0.45) 0%,
+        rgba(12, 53, 71, 0.55) 50%,
+        rgba(12, 53, 71, 0.75) 100%
     );
 }
 
@@ -515,6 +515,20 @@ ul { list-style: none; }
     z-index: 2;
     padding: 0 20px;
     margin-bottom: 40px;
+}
+
+.hero-text-slide {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.hero-text-slide.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
 }
 
 .hero-tag {
