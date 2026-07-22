@@ -3093,7 +3093,7 @@ ul { list-style: none; }
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, var(--light-gray) 0%, var(--white) 100%);
-    padding: 40px 20px;
+    padding: 120px 20px 40px;
 }
 
 .auth-container {
